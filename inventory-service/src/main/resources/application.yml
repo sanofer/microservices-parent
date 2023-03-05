@@ -1,0 +1,17 @@
+server:
+  port: 0
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/inventorydb?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: inventoryuser
+    password: secret
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto:update
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql:
+      true
+
+
